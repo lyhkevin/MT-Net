@@ -64,7 +64,7 @@ Note that our pre-trained Edge-MAE can be utilized for various downstream tasks,
 @misc{li2022MT-Net,
       title={Multi-scale Transformer Network for Cross-Modality MR Image Synthesis}, 
       author={Yonghao Li and Tao Zhou},
-      year={2022},
+      year={2023},
 }
 ```
 
