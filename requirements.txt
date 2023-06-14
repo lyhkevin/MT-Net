@@ -1,0 +1,12 @@
+nibabel
+tqdm
+einops==0.4.1
+imageio==2.15.0
+matplotlib==3.3.3
+numpy==1.19.4
+scikit_image==0.17.2
+timm==0.6.5
+torch==1.7.0+cu110
+torchsummary==1.5.1
+torchvision==0.8.1+cu110
+tqdm==4.64.0
