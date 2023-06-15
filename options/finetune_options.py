@@ -36,7 +36,6 @@ class Finetune_Options():
         self.parser.add_argument("--random", default=False)  # random select subject
         self.parser.add_argument("--log_path", default='./log/Finetune.log')
 
-        self.opt = self.parser.parse_args(args=[])
-
     def get_opt(self):
+        self.opt = self.parser.parse_args()
         return self.opt
