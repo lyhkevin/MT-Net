@@ -1,0 +1,1 @@
+the file name should be MICCAI_BraTS2020_TrainingData.zip
