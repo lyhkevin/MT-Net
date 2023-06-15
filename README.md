@@ -48,7 +48,7 @@ Note that our pre-trained Edge-MAE can be utilized for various downstream tasks,
 
 - ### Pre-training
 
-  To pre-train our Edge-MAE, run `pretrain.py`. You may change the default settings in the `./options/pretrain_options.py`. For instance, increase `num_workers` to speed up pre-training.  The weights will be saved in `./weight/EdgeMAE/`. You can also use the pre-trained checkpoints of Edge-MAE in the `./weight/EdgeMAE/`. 
+  To pre-train our Edge-MAE, run `pretrain.py`. You may change the default settings in the `./options/pretrain_options.py`. For instance, increase `num_workers` to speed up fine-tuning.  The weights will be saved in `./weight/EdgeMAE/`. You can also use the pre-trained checkpoints of Edge-MAE in the `./weight/EdgeMAE/`. 
 
 - ### Fine-tuning
 
