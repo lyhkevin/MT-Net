@@ -11,7 +11,7 @@ class Test_Options():
         self.parser.add_argument("--slice_num", default=60, type=int)
         
         self.parser.add_argument("--depth", default=12,type=int)
-        self.parser.add_argument("--num_workers", default=8, type=int)
+        self.parser.add_argument("--num_workers", default=0, type=int)
         self.parser.add_argument("--data_rate", default=1, type=float)
         self.parser.add_argument("--mae_patch_size", default=8, type=int)
         self.parser.add_argument("--patch_size", default=4, type=int)
@@ -24,9 +24,8 @@ class Test_Options():
         self.parser.add_argument("--num_heads", default=16, type=int)
         self.parser.add_argument("--mlp_ratio", default=4, type=int)
         self.parser.add_argument("--random", default=False)
-        
-        self.opt = self.parser.parse_args(args=[])
 
     def get_opt(self):
+        self.opt = self.parser.parse_args()
         return self.opt
         
