@@ -36,9 +36,8 @@ class Pretrain_Options():
         self.parser.add_argument("--dim_decoder", default=64, type=int)
         self.parser.add_argument("--log_path", default='./log/EdgeMAE.log')
 
-        self.opt = self.parser.parse_args(args=[])
-
     def get_opt(self):
+        self.opt = self.parser.parse_args()
         return self.opt
 
         
