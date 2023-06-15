@@ -7,7 +7,7 @@ class Finetune_Options():
         self.parser = argparse.ArgumentParser()
         self.parser.add_argument('--lr', type=float, default=1e-3, help='learning rate')
         self.parser.add_argument("--warmup_epochs", default=5)
-        self.parser.add_argument("--min_lr", default=1e-5)
+        self.parser.add_argument("--min_lr", default=1e-6)
         self.parser.add_argument("--epoch", default=150, type=int)
         self.parser.add_argument("--batch_size", default=10, type=int)
         self.parser.add_argument("--source_modal", default='t1')
