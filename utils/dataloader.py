@@ -123,8 +123,6 @@ class BraTS_Train_Dataset(data.Dataset):
         if self.argument == True:
             img, gt = cv_random_flip(img, gt)
             img, gt = randomRotation(img, gt)
-            img = randomGaussian(img)
-            #img = randomPeper(img)
             img = img * 255
             img = Image.fromarray(img.astype(np.uint8))
             img = colorEnhance(img)
