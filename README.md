@@ -1,5 +1,5 @@
 # MT-Net
-We provide Pytorch implementations for our paper "Multi-scale Transformer Network for Cross-Modality MR Image Synthesis"
+We provide Pytorch implementations for our paper [Multi-scale Transformer Network for Cross-Modality MR Image Synthesis]([https://ieeexplore.ieee.org/document/8629301](https://ieeexplore.ieee.org/document/10158035)) (IEEE TMI) by Yonghao Li, Tao Zhou, Kelei He, Yi Zhou, Dinggang Shen.
   
 ## 1. Introduction
 
