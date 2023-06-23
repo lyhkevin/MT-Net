@@ -35,9 +35,11 @@ def randomCrop(image, label):
     return image.crop(random_region), label.crop(random_region)
 
 def randomRotation(image, label):
-    rotate_time = random.randint(0, 3)
-    image = np.rot90(image, rotate_time).copy()
-    label = np.rot90(label, rotate_time).copy()
+    rotate = random.randint(0, 1)
+    if rotate == 1:
+        rotate_time = random.randint(1, 3)
+        image = np.rot90(image, rotate_time).copy()
+        label = np.rot90(label, rotate_time).copy()
     return image, label
 
 def colorEnhance(image):
