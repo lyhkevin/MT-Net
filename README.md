@@ -62,7 +62,7 @@ Note that our pre-trained Edge-MAE can be utilized for various downstream tasks,
 
 ```bibtex
 @ARTICLE{10158035,
-  author={Li, Yonghao and Zhou, Tao and He, Kelei and Zhou, Yi and Shen, Dinggang},
+  author={Li Yonghao and Zhou Tao and He Kelei and Zhou Yi and Shen Dinggang},
   journal={IEEE Transactions on Medical Imaging}, 
   title={Multi-scale Transformer Network with Edge-aware Pre-training for Cross-Modality MR Image Synthesis}, 
   year={2023},
