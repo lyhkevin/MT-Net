@@ -40,7 +40,7 @@ Note that our pre-trained Edge-MAE can be utilized for various downstream tasks,
   
 - ### Dataset Preparation
 
-  Download [BraTS2020](https://www.med.upenn.edu/cbica/brats2020/data.html) dataset. The file name should be `./data/MICCAI_BraTS2020_TrainingData.zip`.
+  Download [BraTS2020](https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation?resource=download) dataset from kaggle. The file name should be `./data/archive.zip`. Unzip the file in `./data/`. 
 
 - ### Date Preprocessing
 
