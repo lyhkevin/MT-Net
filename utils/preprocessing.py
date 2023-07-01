@@ -63,15 +63,15 @@ def visualize_to_gif(t1_data, t2_data, t1ce_data, flair_data):
 if __name__ == '__main__':
 
     t1_list = sorted(glob.glob(
-        '../data/MICCAI_BraTS2020_TrainingData/*/*t1.*'))
+        '../data/BraTS2020_TrainingData/MICCAI_BraTS2020_TrainingData/*/*t1.*'))
     t2_list = sorted(glob.glob(
-        '../data/MICCAI_BraTS2020_TrainingData/*/*t2.*'))
+        '../data/BraTS2020_TrainingData/MICCAI_BraTS2020_TrainingData/*/*t2.*'))
     t1ce_list = sorted(glob.glob(
-        '../data/MICCAI_BraTS2020_TrainingData/*/*t1ce.*'))
+        '../data/BraTS2020_TrainingData/MICCAI_BraTS2020_TrainingData/*/*t1ce.*'))
     flair_list = sorted(glob.glob(
-        '../data/MICCAI_BraTS2020_TrainingData/*/*flair.*'))
+        '../data/BraTS2020_TrainingData/MICCAI_BraTS2020_TrainingData/*/*flair.*'))
     gt_list = sorted(glob.glob(
-        '../data/MICCAI_BraTS2020_TrainingData/*/*seg.*'))
+        '../data/BraTS2020_TrainingData/MICCAI_BraTS2020_TrainingData/*/*seg.*'))
 
     data_len = len(gt_list) 
     train_len = int(data_len * 0.8)
@@ -100,7 +100,7 @@ if __name__ == '__main__':
         t1ce_data = t1ce_img.get_fdata()
         gt_data = gt_img.get_fdata()
         gt_data = gt_data.astype(np.uint8)
-        gt_data[gt_data==4] = 3 #label 3 is missing in BraTS 2020
+        gt_data[gt_data == 4] = 3 #label 3 is missing in BraTS 2020
 
         t1_data = normalize(t1_data) # normalize to [0,1]
         t2_data = normalize(t2_data)
