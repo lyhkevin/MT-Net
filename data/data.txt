@@ -1,1 +1,1 @@
-the file name should be MICCAI_BraTS2020_TrainingData.zip
+BraTS2020 Dataset (Training + Validation): https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation?resource=download
