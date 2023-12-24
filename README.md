@@ -58,7 +58,18 @@ Note that our pre-trained Edge-MAE can be utilized for various downstream tasks,
 
   When fine-tuning is completed, the weights of Edge-MAE and MT-Net will be saved in `./weight/finetune/`. You can change the default settings in the `./options/test_options.py`. Then, run `test.py`, and the synthesized image will be saved in `./snapshot/test/`, and can obtain the PSNR, SSIM, and NMSE values.
 
-## 3. Citation
+## 3. Mindspore
+  We also provide Mindspore implementations for our paper, which is a new open source deep learning training/inference framework.
+- ### Installation
+  Install mindspore from https://www.mindspore.cn/ and other dependencies. Unzip `./mindspore/mindcv.zip`, an open-source toolbox for computer vision research.
+- ### Pre-training
+  After preparing all the data, run `./mindspore/pretrain.py` to pre-train our EdgeMAE. You may change the default settings in `./mindspore/pretrain.py`.
+- ### Fine-tuning
+  When pre-training is completed, run `./mindspore/finetune.py`. You may change the default settings in `./mindspore/finetune.py`.
+- ### Test
+  When fine-tuning is completed, run `./mindspore/test.py`. You may change the default settings in `./mindspore/test.py`.
+
+## 4. Citation
 
 ```bibtex
 @ARTICLE{10158035,
@@ -72,7 +83,7 @@ Note that our pre-trained Edge-MAE can be utilized for various downstream tasks,
   doi={10.1109/TMI.2023.3288001}}
 ```
 
-## 4. References
+## 5. References
 - BraTs 2020: [[HERE]](https://www.med.upenn.edu/cbica/brats2020/data.html)
 
 - MAE: [[HERE]](https://github.com/facebookresearch/mae)
